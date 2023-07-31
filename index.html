@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sanskar Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hii, My Name is <span class="purple">Sanskar</span>
+
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg1.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Video Editor', 'Front-End Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <section class="aboutsection" id="about">
+        <div class="leftabout">
+            <img src="hello.png" alt="">
+        </div>
+        <div class="rightabout">
+            <h2 class="heading-text">About Us</h2>
+            <h3 class="heading-text1">I am available for Front-End Development Projects</h3>
+            <p>Hi, I am Sanskar Varshney, From UttarPradesh, India. <br>
+                I design Websites for small businesses and help in build websites for people all over the world.</p>
+
+            <div class="table1">
+                <table cellspacing="8" cellpadding="8">
+                    <tr>
+                        <th>Name:</th>
+                        <td>Sanskar Varshney</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td> info@example.com</td>
+                    </tr>
+                    <tr>
+                        <th>Birthday:</th>
+                        <td> 22 October, 2001</td>
+                    </tr>
+                    <tr>
+                        <th>Study:</th>
+                        <td> Ajay Kumar Garg Engineering College</td>
+                    </tr>
+                    <tr>
+                        <th>Phone:</th>
+                        <td>(+91) 8326547402</td>
+                    </tr>
+                    <tr>
+                        <th>City:</th>
+                        <td>Aligarh, UP, India</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="main-text">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>92%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>    
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>82%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>    
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>    
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>C++</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="cp"></span>
+                    </div>    
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="main" id="contact">
+        <div class="contactform">
+            <h1>Contact me for work/general enquiries</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="clientName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="clientName" required placeholder="Enter Your Name"
+                        minlength="3">
+                </div>
+                <div class="mb-3">
+                    <label for="ClientEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="ClientEmail" required placeholder="Enter Email"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="clientPhone" class="form-label">Phone-No</label>
+                    <input type="number" class="form-control" id="clientPhone" placeholder="Enter Phone-no"
+                        maxlength="10">
+                </div>
+                <div class="mb-3">
+                    <label for="clientenquiry" class="form-label">Enquiry</label>
+                    <input type="text" class="form-control" id="clientenquiry" placeholder="Enter your enquiry">
+                </div>
+                <div class="mb-3" id="form-check">
+                    <input type="checkbox" class="form-check-input" id="isclient">
+                    <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-sect mt-20 width-50">CopyRight © 2023 sansdev.com Website Template. All Rights Reserved
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+</html>
